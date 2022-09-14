@@ -9,11 +9,15 @@ if (player2.length > 10) player2 = player2.substring(0, 10);
 
 document.getElementById('Player1').innerHTML = player1;
 document.getElementById('Player2').innerHTML = player2;
+const body = document.querySelector('body')
+const container = document.querySelector('.container')
+body.style.animation = "main-animation 2.5s both";
+container.style.animation = "main-animation 3.5s both";
+
 
 const button = document.querySelector("#buttonend");
 
 button.addEventListener('click', () => {
-
 
 var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 
@@ -53,23 +57,23 @@ else {
 const dice_shake = new Audio("./source/audio/dice_shake.mp3");
 const dice_roll = new Audio("./source/audio/dice_roll.mp3");
 
-
 const roll = buttonstart.addEventListener("click", function () {
   buttonstart.style.display = "none";
   buttonend.style.display = "block";
+
   dice_shake.play();
 
-
-  a1.style.animation = "rotate-center 2s ease-in-out both infinite";
-  a2.style.animation = "rotate-center 2s ease-in-out both infinite";
+  a1.style.animation = "rotate-center 1s ease-in-out both infinite";
+  a2.style.animation = "rotate-center 1s ease-in-out both infinite";
 });
 
 const end = buttonend.addEventListener("click", function () {
   buttonend.style.display = "none";
   buttonstart.style.display = "block";
+
   dice_roll.play();
 
-  a1.style.animation = "rotate-end 3s ease-in-out both ";
-  a2.style.animation = "rotate-end 3s ease-in-out both ";
+  a1.style.animation = "rotate-end 1s ease-in-out both ";
+  a2.style.animation = "rotate-end 1s ease-in-out both ";
 });
 

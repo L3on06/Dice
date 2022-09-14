@@ -12,6 +12,7 @@
 }
 
 .container {
+
   text-align: center;
   z-index: 1;
 }
@@ -56,14 +57,19 @@
   letter-spacing: 5px;
   cursor: pointer;
   background: radial-gradient(circle, rgba(174, 236, 238, 1) 0%, rgba(155, 148, 233, 1) 100%);
-}
+  /* animation-delay: 100s; */
+/* transition-delay: 5s; */
+  animation: main-animation 1s 1.7s both;
+  background: linear-gradient(to bottom, #0066cc 0%, #0099cc 100%);
+
+background: linear-gradient(to bottom, #33ccff 0%, #0066ff 100%);}
 
 .button:hover {
   cursor: pointer;
-  background: #1ca8d7;
+  /* background: #1ca8d7; */
   border: 2px solid #000000;
   letter-spacing: 15px;
-  background: radial-gradient(circle, rgba(174, 236, 238, 1) 0%, rgba(155, 148, 233, 1) 70%);
+   background: linear-gradient(to top left, #33ccff 0%, #0066ff 100%);
 }
 
 #buttonend {
@@ -110,6 +116,7 @@
   background: #4e54c8;
   width: 100%;
   height: 100vh;
+  background: linear-gradient(to top right, #0000ff 0%, #0099cc 100%);
 }
 
 .circles {
@@ -334,3 +341,24 @@
     letter-spacing: 7px;
   }
 }
+
+@keyframes main-animation {
+    from {
+clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes main-animati {
+    from {
+clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
