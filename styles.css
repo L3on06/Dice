@@ -50,8 +50,9 @@
   height: 6vh;
   letter-spacing: 5px;
   cursor: pointer;
-  background: radial-gradient(circle, rgba(174, 236, 238, 1) 0%, rgb(202, 198, 244) 100%);
-  animation: main-animation 1s 1.7s both;
+  background:lightblue;
+  animation: button-animation 1s 1.7s both;
+  box-shadow: -14px 18px 35px -1px rgba(0,0,0,1);
 }
 
 .button:hover {
@@ -59,6 +60,8 @@
   border: 2px solid #000000;
   letter-spacing: 15px;
   background: radial-gradient(circle, rgba(174, 236, 238, 1) 50%, rgb(202, 198, 244) 100%);
+  background:powderblue;
+
 }
 
 #buttonend {
@@ -71,6 +74,16 @@
   color: rgb(0, 0, 0);
   text-align: center;
 }
+@keyframes button-animation {
+    from {
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0 100%);
+    }
+}
+
 
 @keyframes rotate-center {
   0% {
@@ -328,24 +341,3 @@
     letter-spacing: 7px;
   }
 }
-
-@keyframes main-animation {
-    from {
-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    to {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-}
-
-@keyframes main-animati {
-    from {
-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    to {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-}
-
