@@ -6,13 +6,7 @@
   overflow: hidden;
 }
 
-:root {
-  --mainColor: #66b3ff;
-  --textShadow: -10px 5px 15px rgba(0, 0, 0, 0.6);
-}
-
 .container {
-
   text-align: center;
   z-index: 1;
 }
@@ -24,10 +18,10 @@
 .title {
   width: 100%;
   height: 12vh;
-  text-shadow: var(--textShadow);
+  text-shadow: -10px 5px 15px rgba(0, 0, 0, 0.6);
   margin: 1rem 0rem;
   font-size: 2rem;
-  color: var(--mainColor);
+  color:lavender;
 }
 
 .paragraf {
@@ -36,8 +30,8 @@
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
-  text-shadow: var(--textShadow);
-  color: var(--mainColor);
+  text-shadow:  -10px 5px 15px rgba(0, 0, 0, 0.6);
+  color: lavender;
 }
 
 .img {
@@ -47,7 +41,7 @@
 
 .button {
   margin: auto;
-  text-shadow: var(--textShadow);
+  text-shadow: -10px 5px 15px rgba(0, 0, 0, 0.6);
   color: black;
   font-size: 15px;
   border: 1px solid #000000;
@@ -56,20 +50,15 @@
   height: 6vh;
   letter-spacing: 5px;
   cursor: pointer;
-  background: radial-gradient(circle, rgba(174, 236, 238, 1) 0%, rgba(155, 148, 233, 1) 100%);
-  /* animation-delay: 100s; */
-/* transition-delay: 5s; */
+  background: radial-gradient(circle, rgba(174, 236, 238, 1) 0%, rgb(202, 198, 244) 100%);
   animation: main-animation 1s 1.7s both;
-  background: linear-gradient(to bottom, #0066cc 0%, #0099cc 100%);
-
-background: linear-gradient(to bottom, #33ccff 0%, #0066ff 100%);}
+}
 
 .button:hover {
   cursor: pointer;
-  /* background: #1ca8d7; */
   border: 2px solid #000000;
   letter-spacing: 15px;
-   background: linear-gradient(to top left, #33ccff 0%, #0066ff 100%);
+  background: radial-gradient(circle, rgba(174, 236, 238, 1) 50%, rgb(202, 198, 244) 100%);
 }
 
 #buttonend {
@@ -79,7 +68,7 @@ background: linear-gradient(to bottom, #33ccff 0%, #0066ff 100%);}
 .footer {
   margin-top: 5%;
   letter-spacing: 2px;
-  color: #EEEEEE;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -112,11 +101,9 @@ background: linear-gradient(to bottom, #33ccff 0%, #0066ff 100%);}
 }
 
 .area {
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
-  background: #4e54c8;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to top right, #0000ff 0%, #0099cc 100%);
+  background: #7FBCD2;
 }
 
 .circles {
