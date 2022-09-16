@@ -51,7 +51,7 @@
   letter-spacing: 5px;
   cursor: pointer;
   background:lightblue;
-  animation: button-animation 1s 1.7s both;
+  animation: button-animation 1s 1.8s both;
   box-shadow: -14px 18px 35px -1px rgba(0,0,0,1);
 }
 
@@ -76,11 +76,11 @@
 }
 @keyframes button-animation {
     from {
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);    
     }
 
     to {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }
 
