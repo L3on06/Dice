@@ -1,5 +1,28 @@
 let player_1 = prompt("What is your name Player 1");
+while (true) {
+  if (player_1.length > 0) break;
+  player_1 = alert('Please enter your name Player 1');
+   player_1 = prompt("What is your name Player 1");
+}
+
+while (true) {
+  if (player_1.length <= 10) break;
+  player_1 = alert('Player 1 dont enter more then 10 charater');
+   player_1 = prompt("What is your name Player 1");
+}
+
 let player_2 = prompt("What is your name Player 2");
+while (true) {
+  if (player_2.length > 0) break;
+  player_2 = alert('Please enter your name Player 2');
+   player_2 = prompt("What is your name Player 2");
+}
+
+while (true) {
+  if (player_2.length <= 10) break;
+  player_2 = alert('Dont enter more then 10 charater');
+     player_2 = prompt("What is your name Player 2");
+}
 
 var player1 = player_1;
 var player2 = player_2;
