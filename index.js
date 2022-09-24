@@ -1,4 +1,5 @@
 let player_1 = prompt("What is your name Player 1");
+
 while (true) {
   if (player_1.length > 0) break;
   player_1 = alert('Please enter your name Player 1');
@@ -8,10 +9,24 @@ while (true) {
 while (true) {
   if (player_1.length <= 10) break;
   player_1 = alert('Player 1 dont enter more then 10 charater');
+}
+
+while (true) {
+  if (validateNameType(player_1)) break; {
+  alert("U can type only letters")
    player_1 = prompt("What is your name Player 1");
+}  
+}
+
+while (true) {
+  if (validateNameZeroSymbol(player_1)) break; {
+  alert("Please type only letters not symbols")
+   player_1 = prompt("What is your name Player 1");
+  }
 }
 
 let player_2 = prompt("What is your name Player 2");
+
 while (true) {
   if (player_2.length > 0) break;
   player_2 = alert('Please enter your name Player 2');
@@ -22,6 +37,28 @@ while (true) {
   if (player_2.length <= 10) break;
   player_2 = alert('Dont enter more then 10 charater');
      player_2 = prompt("What is your name Player 2");
+}
+
+while (true) {
+  if (validateNameType(player_2)) break; {
+  alert("U can type only letters")
+   player_2 = prompt("What is your name Player 2");
+}  
+}
+while (true) {
+  if (validateNameZeroSymbol(player_2)) break; {
+  alert("Please type only letters not symbols")
+   player_2 = prompt("What is your name Player 2");
+  }
+}
+
+function validateNameType(player_1) {
+  const regex = /([0-9\d])/g
+  return player_1.match(regex) === null
+}1
+function validateNameZeroSymbol(player_1) {
+  const regex = /[\W]/g
+  return player_1.match(regex) === null
 }
 
 var player1 = player_1;
