@@ -55,7 +55,7 @@ while (true) {
 function validateNameType(player_1) {
   const regex = /([0-9\d])/g
   return player_1.match(regex) === null
-}1
+}
 function validateNameZeroSymbol(player_1) {
   const regex = /[\W]/g
   return player_1.match(regex) === null
