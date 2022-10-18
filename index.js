@@ -9,6 +9,7 @@ while (true) {
 while (true) {
   if (player_1.length <= 10) break;
   player_1 = alert('Player 1 dont enter more then 10 charater');
+  player_1 = prompt("What is your name Player 1");
 }
 
 while (true) {
@@ -74,10 +75,10 @@ const container = document.querySelector('.container')
 body.style.animation = "main-animation 2.5s both";
 container.style.animation = "main-animation 3.5s both";
 
+const buttonStart = document.querySelector("#buttonstart");
+const buttonEnd = document.querySelector("#buttonend");
 
-const button = document.querySelector("#buttonend");
-
-button.addEventListener('click', () => {
+buttonEnd.addEventListener('click', () => {
 
   var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 
@@ -117,9 +118,9 @@ button.addEventListener('click', () => {
 const dice_shake = new Audio("./source/audio/dice_shake.mp3");
 const dice_roll = new Audio("./source/audio/dice_roll.mp3");
 
-const roll = buttonstart.addEventListener("click", function () {
-  buttonstart.style.display = "none";
-  buttonend.style.display = "block";
+const roll = buttonStart.addEventListener("click", function () {
+  buttonStart.style.display = "none";
+  buttonEnd.style.display = "block";
 
   dice_shake.play();
 
@@ -127,9 +128,9 @@ const roll = buttonstart.addEventListener("click", function () {
   a2.style.animation = "rotate-center 1s ease-in-out both infinite";
 });
 
-const end = buttonend.addEventListener("click", function () {
-  buttonend.style.display = "none";
-  buttonstart.style.display = "block";
+const end = buttonEnd.addEventListener("click", function () {
+  buttonEnd.style.display = "none";
+  buttonStart.style.display = "block";
 
   dice_roll.play();
 
