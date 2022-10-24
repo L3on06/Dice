@@ -1,3 +1,5 @@
+// Player 1 //
+
 let player_1 = prompt("What is your name Player 1");
 
 while (true) {
@@ -26,6 +28,9 @@ while (true) {
   }
 }
 
+
+// Player 2 //
+
 let player_2 = prompt("What is your name Player 2");
 
 while (true) {
@@ -52,6 +57,7 @@ while (true) {
     player_2 = prompt("What is your name Player 2");
   }
 }
+// regex //
 
 function validateNameType(player_1) {
   const regex = /([0-9\d])/g
@@ -61,6 +67,8 @@ function validateNameZeroSymbol(player_1) {
   const regex = /[\W]/g
   return player_1.match(regex) === null
 }
+//  // 
+
 
 var player1 = player_1;
 var player2 = player_2;
