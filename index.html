@@ -5,34 +5,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
   <title> 🎲 Dicee 🎲 </title>
+
+  <!-- Favicon -->
   <link rel="icon" href="./source/images/logo.png">
+
+  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=DynaPuff&family=Rubik+Dirt&family=Silkscreen&display=swap"
     rel="stylesheet">
+
+  <!-- Style -->
   <link rel="stylesheet" href="./source/styles/index.css">
+
+  <!-- Javascript -->
   <script src="index.js" defer></script>
 </head>
 
 <body>
   <div class="container context">
-
     <header>
       <h1 class="title"> 🎲 Dicee 🎲 </h1>
     </header>
 
     <main class="main">
-      <div class="dice main-animation">
-        <p class="paragraf" id="Player1">Ylber</p>
-        <div>
+      <section class="dice main-animation">
+        <p class="paragraf" id="Player1">Player 1</p>
+        <figure>
           <img id="a1" class="img img1" src="./source/images/dice6.png" alt="Dice">
-        </div>
-      </div>
+        </figure>
+      </section>
 
-      <div class="dice">
-        <p class="paragraf" id="Player2">leon</p>
+      <section class="dice">
+        <p class="paragraf" id="Player2">Player 2</p>
         <img id="a2" class="img img2" src="./source/images/diceR6.png" alt="Dice">
-      </div>
+      </section>
     </main>
 
     <button id="buttonstart" class="button">Start</button>
@@ -43,6 +51,7 @@
     </footer>
   </div>
 
+  <!-- Background animation -->
   <div class="area">
     <ul class="circles">
       <li></li>
@@ -57,7 +66,6 @@
       <li></li>
     </ul>
   </div>
-
 </body>
 
 </html>
