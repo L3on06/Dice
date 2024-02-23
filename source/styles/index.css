@@ -117,11 +117,11 @@ main {
   }
 
   50% {
-    transform: scale(0.5) rotateZ(7200deg);
+    transform: scale(0.5) rotateZ(720deg);
   }
 
   100% {
-    transform: scale(0.5) rotate(-1400deg);
+    transform: scale(0.5) rotate(-140deg);
   }
 }
 
