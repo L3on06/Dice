@@ -136,7 +136,7 @@ export default function Home() {
         <section className="github">
           <a href="https://github.com/L3on06" target="_blank">
             <figure>
-              {/* <img src="/source/images/github.svg" alt="Github" /> */}
+              <Image src="/source/images/github.svg" alt="Github" width={200} height={200} />
             </figure>
           </a>
         </section>
