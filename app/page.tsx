@@ -7,8 +7,8 @@ import Image from "next/image";
 export default function Home() {
   const [player1, setPlayer1] = useState<string>('');
   const [player2, setPlayer2] = useState<string>('');
-  const [player1Image, setPlayer1Image] = useState<string>('/source/images/dice6.png');
-  const [player2Image, setPlayer2Image] = useState<string>('/source/images/diceR6.png');
+  const [player1Image, setPlayer1Image] = useState<string>('/assets/images/dice6.png');
+  const [player2Image, setPlayer2Image] = useState<string>('/assets/images/diceR6.png');
   const [namesEntered, setNamesEntered] = useState<boolean>(false);
 
   const validateNameType = (playerName: string): boolean => {
@@ -51,7 +51,7 @@ export default function Home() {
       buttonStart.style.display = "none";
       buttonEnd.style.display = "block";
 
-      const dice_shake = new Audio("/source/audio/dice_shake.mp3");
+      const dice_shake = new Audio("/assets/audios/dice_shake.mp3");
       dice_shake.play();
 
       const a1 = document.querySelector(".img1") as HTMLElement;
@@ -74,15 +74,15 @@ export default function Home() {
       buttonEnd.style.display = "none";
       buttonStart.style.display = "block";
 
-      const dice_roll = new Audio("/source/audio/dice_roll.mp3");
+      const dice_roll = new Audio("/assets/audios/dice_roll.mp3");
       dice_roll.play();
 
       const randomNumber1 = Math.floor(Math.random() * 6) + 1;
-      const randomImageSource = `/source/images/dice${randomNumber1}.png`;
+      const randomImageSource = `/assets/images/dice${randomNumber1}.png`;
       setPlayer1Image(randomImageSource);
 
       const randomNumber2 = Math.floor(Math.random() * 6) + 1;
-      const randomImageSource2 = `/source/images/diceR${randomNumber2}.png`;
+      const randomImageSource2 = `/assets/images/diceR${randomNumber2}.png`;
       setPlayer2Image(randomImageSource2);
 
       const headingElement = document.querySelector("h1");
@@ -136,7 +136,7 @@ export default function Home() {
         <section className="github">
           <a href="https://github.com/L3on06" target="_blank">
             <figure>
-              <Image src="/source/images/github.svg" alt="Github" width={200} height={200} />
+              <Image src="/assets/images/github.svg" alt="Github" width={200} height={200} />
             </figure>
           </a>
         </section>
